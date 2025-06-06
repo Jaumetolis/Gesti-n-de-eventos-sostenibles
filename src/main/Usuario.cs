@@ -57,9 +57,12 @@ class Usuario
         }
         if (!encontrado)
         {
-            Inscripcion ins = new Inscripcion(this, e);
-            lista.Add(ins);
-            e.RegistrarParticipante(ins);
+            if (e.lista.lenght() <= e.AforoMaximo)
+            {
+                Inscripcion ins = new Inscripcion(this, e);
+                lista.Add(ins);
+                e.RegistrarParticipante(ins);
+            }
         }
     }
     public void DesincribirseEnEvento(Inscripcion i)

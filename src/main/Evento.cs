@@ -10,7 +10,7 @@ class Evento
         }
         private int id;
         private string nombre;
-        private string descripcion
+        private string descripcion;
         private int duracion;
         private DateTime fecha;
         private int aforoMaximo;
@@ -42,8 +42,9 @@ class Evento
         public DateTime Fecha { set { fecha = value; } }
         public string Nombre { set { nombre = value; } }
         public int Duracion { set { duracion = value; } }
-        public int AforoMaximo { set { aforoMaximo = value; } }
+        public int AforoMaximo { set { aforoMaximo = value; } get { return aforoMaximo; } } 
         public Categoria Categoria { set { categoria = value; } get { return categoria ; } }
+        public List<Inscripcion> lista { get { return lista ; } }
         public Ubicacion Lugar { set { lugar = value; } }
 
         /// <summary>
@@ -61,7 +62,7 @@ class Evento
 
         public void RegistrarParticipante(Inscripcion i)
         {
-            lista.Add(i);
+                lista.Add(i);
         }
         public void EliminarParticipante(Inscripcion i)
         {
