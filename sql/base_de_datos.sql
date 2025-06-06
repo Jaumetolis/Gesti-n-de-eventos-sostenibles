@@ -54,6 +54,7 @@ CREATE TABLE Evento (
     fecha DATE NOT NULL,
     duracion INT NOT NULL,
     aforoMax INT NOT NULL,
+   descripcion VARCHAR(100),
     estado ENUM('activo', 'cancelado') NOT NULL,
     id_organizador INT NOT NULL,
     id_ubicacion INT NOT NULL,
