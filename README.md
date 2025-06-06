@@ -1,4 +1,4 @@
-# Gesti-n-de-eventos-sostenibles
+# Gestion-de-eventos-sostenibles
 Este repositorio es un proyecto de 1 DAM en el que están subidas las diferentes partes de un proyecto web de gestión de eventos, ahora describiré que esta subido en cada parte.
 # /Doc
 Aquí esta subida toda la documentación sobre la instalación de windows 10 en VirtualBox, y la puesta en marcha de un servidor web a nivel local con apache
